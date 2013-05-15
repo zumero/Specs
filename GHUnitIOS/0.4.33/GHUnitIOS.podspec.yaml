@@ -1,0 +1,23 @@
+---
+name: GHUnitIOS
+version: 0.4.33
+license: MIT
+summary: Test Framework for Objective-C.
+homepage: https://github.com/gabriel/gh-unit
+authors:
+  Gabriel Handford: gabrielh@gmail.com
+source:
+  git: https://github.com/gabriel/gh-unit.git
+  commit: fea526dee3e6e00548f280b56d4afab049733ef8
+description: GHUnit is a test framework for Objective-C, Mac OS X 10.5 and above and
+  iPhone 3.x and above. It can be used standalone or with other testing frameworks
+  like SenTestingKit or GTM.
+source_files:
+- Classes/**/*.{h,m}
+- Classes-iOS/**/*.{h,m}
+- Libraries/YelpKit/*.{h,m}
+- Libraries/GTM/**/*.{h,m}
+- Libraries/GHKit/**/*.{h,m}
+platforms:
+  ios: 
+frameworks: CoreLocation

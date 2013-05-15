@@ -1,0 +1,14 @@
+---
+name: NSString-Ruby
+version: 1.0a
+summary: NSString category providing common Ruby String methods.
+homepage: https://github.com/zdavison/NSString-Ruby
+license: MIT
+authors:
+  zdavison: zac.developer@gmail.com
+source:
+  git: https://github.com/zdavison/NSString-Ruby.git
+  tag: v1.0a
+source_files: NSString+Ruby/NSString+Ruby.{h,m}
+public_header_files: NSString+Ruby/NSString+Ruby.h
+requires_arc: true

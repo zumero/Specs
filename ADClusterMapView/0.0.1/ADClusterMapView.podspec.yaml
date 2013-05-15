@@ -1,0 +1,26 @@
+---
+name: ADClusterMapView
+version: 0.0.1
+summary: ADClusterMapView is a drop-in subclass of MKMapView that displays and animate
+  clusters of annotations.
+description: |2
+                     ADClusterMapView is a drop-in subclass of MKMapView that
+                     displays and animate clusters of annotations. This is very
+                     useful in cases where you have to display many annotations
+                     on the map. Concept and implementation were described on
+                     Applidium's [website][http://applidium.com/en/news/too_many_pins_on_your_map/].
+homepage: https://github.com/applidium/ADClusterMapView
+license:
+  type: NetBSD
+  file: LICENSE
+authors:
+  Applidium: https://github.com/applidium/
+source:
+  git: https://github.com/applidium/ADClusterMapView.git
+  commit: d68d69b238929
+platforms:
+  ios: 
+source_files: ADClusterMapView/**/*.{h,m}
+frameworks:
+- MapKit
+- CoreLocation

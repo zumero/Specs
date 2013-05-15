@@ -1,0 +1,14 @@
+---
+name: XMLDictionary
+version: 2.0.0
+summary: Create an NSDictionary from an XML string. Create an XML string from an NSDictionary.
+homepage: https://github.com/mysterioustrousers/XMLDictionary
+license: MIT
+authors:
+  Adam Kirk: atomkirk@gmail.com
+  Nick Lockwood: original author
+source:
+  git: https://github.com/mysterioustrousers/XMLDictionary.git
+  tag: 2.0.0
+source_files: XMLDictionary/*.{h,m}
+requires_arc: true

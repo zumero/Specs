@@ -1,0 +1,34 @@
+---
+name: AdMob
+version: 6.4.1
+summary: Google AdMob Ads SDK.
+description: The Google AdMob Ads SDK allows developers to easily incorporate mobile-friendly
+  text and image banners as well as rich, full-screen web apps known as interstitials.
+homepage: https://developers.google.com/mobile-ads-sdk/docs/
+license:
+  type: Copyright
+  text: |
+    Copyright 2009 - 2013 Google, Inc. All rights reserved.
+authors: Google Inc.
+source:
+  http: https://dl.google.com/googleadmobadssdk/googleadmobadssdkios.zip
+  flatten: true
+platforms:
+  ios: 
+preserve_paths: libGoogleAdMobAds.a
+source_files:
+- '*.h'
+- Add-ons/Search/*.h
+- Add-ons/Mediation/*.h
+- Add-ons/DoubleClick/*.h
+frameworks:
+- AudioToolbox
+- MessageUI
+- SystemConfiguration
+- CoreGraphics
+- StoreKit
+weak_frameworks: AdSupport
+libraries: GoogleAdMobAds
+xcconfig:
+  OTHER_LDFLAGS: -ObjC
+  LIBRARY_SEARCH_PATHS: '"$(PODS_ROOT)/AdMob/"'

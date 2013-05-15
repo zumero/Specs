@@ -1,0 +1,27 @@
+---
+name: Clutch
+version: 0.0.1
+summary: This is the iOS client library for Clutch.io.
+description: |2
+        Example
+        Here's how you might use it for simple A/B testing:
+
+        [ClutchAB testWithName:@"signUpBtnColor" A:^{
+        // Display green sign-up button
+        } B:^{
+            // Display blue sign-up button
+            }];
+            Documentation
+            More documentation can be found at: http://docs.clutch.io.
+homepage: https://clutch.io/
+license: Apache License
+authors:
+  Eric Florenzano: floguy@gmail.com
+source:
+  git: https://github.com/clutchio/clutchios.git
+  commit: f2c8745d25104f671d3a1b67e9ef9745ac79dbe7
+platforms:
+  ios: 
+xcconfig:
+  HEADER_SEARCH_PATHS: $(PODS_ROOT)/Clutch/
+source_files: Clutch

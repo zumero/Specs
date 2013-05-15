@@ -1,0 +1,32 @@
+---
+name: BugSquasher
+version: 1.0.0
+description: Allow jira users to log bugs and report issues by pressing volume buttons
+  on your device(in DEBUG).
+summary: Upload screenshots, the log files from ASL(automagically), bundle version,
+  title, and summary.
+homepage: https://github.com/johndoran/BugSquasher
+license: MIT
+authors:
+  John Doran: johnwildoran@gmail.com
+source:
+  git: https://github.com/johndoran/BugSquasher.git
+  tag: v1.0.0
+platforms:
+  ios: '5.0'
+source_files:
+- JiraApp/bugSquasher
+- JiraApp/bugSquasher/**/**/*.{h,m}
+exclude_files: Classes/Exclude
+frameworks:
+- QuartzCore
+- MediaPlayer
+- AudioUnit
+- CoreAudio
+- AudioToolbox
+requires_arc: true
+dependencies:
+  FXKeychain: []
+  AFNetworking: []
+  MBProgressHUD:
+  - ~> 0.6

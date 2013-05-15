@@ -1,0 +1,44 @@
+---
+name: Neptune
+version: '0.2'
+summary: Simple registration of remote NSUserDefaults.
+description: |2
+    # Neptune
+
+    Neptune allows easy configuration of NSUserDefaults from a remote plist.
+
+    Neptune was inspired by [GroundControl](https://github.com/mattt/GroundControl) although it takes a slightly different design approach.
+
+    ## Features
+
+    - Enables a default set of options to be loaded from a local plist file
+    - Has no external dependencies
+    - Very simple API
+homepage: https://github.com/calebd/neptune
+license: MIT
+authors:
+  Caleb Davenport: calebmdavenport@gmail.com
+source:
+  git: https://github.com/calebd/neptune.git
+  tag: '0.2'
+platforms:
+  ios: '4.0'
+source_files: Neptune/**/*.{h,m}
+documentation:
+  appledoc:
+  - --project-name
+  - Neptune
+  - --project-company
+  - Caleb Davenport
+  - --company-id
+  - me.calebd
+  - --docset-copyright
+  - Caleb Davenport
+  - --ignore
+  - Common
+  - --index-desc
+  - README.md
+  - --no-keep-undocumented-objects
+  - --no-keep-undocumented-members
+frameworks: Foundation
+requires_arc: true

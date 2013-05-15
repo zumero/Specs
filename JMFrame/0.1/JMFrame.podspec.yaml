@@ -1,0 +1,16 @@
+---
+name: JMFrame
+version: '0.1'
+summary: UIView category to help the handling of view frames.
+homepage: https://github.com/patoroco/JMFrame
+license: MIT
+authors:
+  Jorge Maroto Garcia: patoroco@gmail.com
+source:
+  git: https://github.com/patoroco/JMFrame.git
+  tag: v0.1
+platforms:
+  ios: '2.0'
+source_files: JMFrame
+frameworks: UIKit
+requires_arc: false

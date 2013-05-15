@@ -1,0 +1,29 @@
+---
+name: NetworkKit
+version: 1.0.0
+summary: NetworkKit is a super simple and easy to install class for creating asynchronous
+  requests to various websites.
+homepage: http://maxkramer.co
+license:
+  type: MIT
+  file: LICENSE
+authors:
+  MaxKramer: max@maxkramer.co
+source:
+  git: https://github.com/MaxKramer/NetworkKit.git
+  tag: v1.0.0
+platforms:
+  ios: '5.0'
+source_files:
+- NetworkKit
+- NetworkKit/**/*.{h,m}
+resources: NetworkKit/**/NetworkKitStubs.plist
+frameworks:
+- CFNetwork.framework
+- SystemConfiguration.framework
+subspecs:
+- name: arc
+  source_files: NetworkKit/**/NetworkKit.{h,m}
+  requires_arc: true
+- name: nonarc
+  source_files: NetworkKit/**/Reachability.{h,m}

@@ -1,0 +1,18 @@
+---
+name: Analytics
+version: 0.0.4
+summary: Segment.io Analytics library for iOS and OSX.
+homepage: https://segment.io/libraries/ios-osx
+license:
+  type: MIT
+  file: License.md
+authors:
+  Segment.io: friends@segment.io
+source:
+  git: https://github.com/segmentio/analytics-ios-osx.git
+  tag: 0.0.4
+source_files: Analytics.{h,m}
+requires_arc: true
+platforms:
+  osx: '10.7'
+  ios: '5.0'

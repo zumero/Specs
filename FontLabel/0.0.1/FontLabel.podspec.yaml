@@ -1,0 +1,14 @@
+---
+name: FontLabel
+version: 0.0.1
+platforms:
+  ios: 
+license: Apache License, Version 2.0
+summary: A project that includes a module for drawing arbitrary .ttf fonts for iPhone.
+homepage: http://zynga.com/
+authors:
+  Zynga, Inc.: http://code.zynga.com
+source:
+  git: https://github.com/zynga/FontLabel.git
+  commit: 2fe3721146b9607a1154823fc98c4cb003551557
+source_files: FontLabel/Classes/FontLabel/*.{h,m}

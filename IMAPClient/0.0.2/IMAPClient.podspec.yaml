@@ -1,0 +1,16 @@
+---
+name: IMAPClient
+version: 0.0.2
+license: MIT
+summary: An asynchrounous IMAP client for iOS.
+homepage: https://github.com/bcoe/IMAPClient
+authors:
+  bcoe: bencoe@gmail.com
+source:
+  git: https://github.com/bcoe/IMAPClient.git
+  tag: 0.0.2
+platforms:
+  ios: 
+source_files:
+- Classes
+- Classes/**/*.{h,m}

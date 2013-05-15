@@ -1,0 +1,14 @@
+---
+name: GetGravatar
+version: '1.1'
+platforms:
+  ios: 
+summary: Simple class for generating a gravatar from an email address.
+homepage: https://github.com/iprayforwaves/GetGravatar
+license: GPL
+authors:
+  Raquel Galan: iprayforwaves@gmail.com
+source:
+  git: https://github.com/iprayforwaves/GetGravatar.git
+  tag: '1.1'
+source_files: '*.{h,m}'

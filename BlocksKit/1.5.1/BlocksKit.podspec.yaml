@@ -1,0 +1,31 @@
+---
+name: BlocksKit
+version: 1.5.1
+license: MIT
+summary: The Objective-C block utilities you always wish you had.
+homepage: https://github.com/zwaldowski/BlocksKit
+authors:
+  Zachary Waldowski: zwaldowski@gmail.com
+  Alexsander Akers: a2@pandamonia.us
+source:
+  git: https://github.com/zwaldowski/BlocksKit.git
+  tag: v1.5.1
+dependencies:
+  A2DynamicDelegate: []
+osx:
+  source_files: BlocksKit/*.{h,m}
+ios:
+  frameworks: MessageUI
+  source_files:
+  - BlocksKit/*.{h,m}
+  - BlocksKit/UIKit/*.{h,m}
+  - BlocksKit/MessageUI/*.{h,m}
+documentation:
+  html: http://zwaldowski.github.com/BlocksKit/Documentation/index.html
+  appledoc:
+  - --project-company
+  - Dizzy Technology
+  - --company-id
+  - com.dizzytechnology
+  - --no-repeat-first-par
+  - --no-warn-invalid-crossref

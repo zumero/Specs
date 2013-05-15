@@ -1,0 +1,51 @@
+---
+name: TMCache
+version: 1.1.1
+source_files: TMCache/*.{h,m}
+homepage: https://github.com/tumblr/TMCache
+summary: Fast parallel object cache for iOS and OS X.
+authors:
+  Justin Ouellette: jstn@tumblr.com
+source:
+  git: https://github.com/tumblr/TMCache.git
+  tag: 1.1.1
+license:
+  type: Apache 2.0
+  file: LICENSE.txt
+requires_arc: true
+frameworks: Foundation
+ios:
+  weak_frameworks: UIKit
+osx:
+  weak_frameworks: AppKit
+platforms:
+  ios: '5.0'
+  osx: '10.7'
+documentation:
+  html: http://cocoadocs.org/docsets/TMCache/
+  appledoc:
+  - --company-id
+  - com.tumblr
+  - --project-name
+  - TMCache
+  - --project-company
+  - Tumblr
+  - --project-version
+  - 1.1.1
+  - --docset-min-xcode-version
+  - '4.3'
+  - --docset-bundle-name
+  - '%PROJECT %VERSION'
+  - --docset-bundle-id
+  - '%COMPANYID.%PROJECTID'
+  - --docset-bundle-filename
+  - '%COMPANYID.%PROJECTID-%VERSIONID.docset'
+  - --ignore
+  - tests
+  - --ignore
+  - docs
+  - --ignore
+  - '*.m'
+  - --no-repeat-first-par
+  - --explicit-crossref
+  - --clean-output

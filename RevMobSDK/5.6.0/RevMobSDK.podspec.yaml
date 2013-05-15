@@ -1,0 +1,25 @@
+---
+name: RevMobSDK
+version: 5.6.0
+summary: RevMobSDK for showing ads, banners, more games link and many more.
+homepage: http://sdk.revmob.com/ios.html
+license:
+  type: Commersial
+  file: LICENSE
+authors:
+  RevMob: http://www.revmob.com
+source:
+  git: https://github.com/evil159/RevMobiOSSDK.git
+  tag: 5.6.0
+platforms:
+  ios: 
+source_files: '**/Headers/*.h'
+preserve_paths: '**/**'
+weak_frameworks:
+- StoreKit
+- AdSupport
+frameworks:
+- SystemConfiguration
+- RevMobAds
+xcconfig:
+  FRAMEWORK_SEARCH_PATHS: $(PODS_ROOT)/RevMobSDK

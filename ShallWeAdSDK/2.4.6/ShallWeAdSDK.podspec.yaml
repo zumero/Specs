@@ -1,0 +1,23 @@
+---
+name: ShallWeAdSDK
+version: 2.4.6
+summary: ShallWeAd SDK.
+homepage: https://github.com/youknowone/ShallWeAdSDK
+license:
+  type: proprietary
+  text: |2
+                   Copyright (C) Shall We Ad? All Right Reserved.
+authors: Shall We Ad?
+source:
+  git: https://github.com/youknowone/ShallWeAdSDK.git
+  tag: 2.4.6
+platforms:
+  ios: 
+source_files:
+- '*.{h,m}'
+- ShallWeAD_IOSSDK.Framework/Headers/ShallWeAD.h
+preserve_paths: '*.a'
+frameworks:
+- CoreLocation
+- CoreTelephony
+- CoreGraphics

@@ -1,0 +1,19 @@
+---
+name: DVCoreDataFinders
+version: '0.1'
+summary: Simple, no-frills CoreData helper methods.
+description: |2
+                      A simple Objective-C category on `NSManagedObject`
+                      to find objects and create instances of
+                      `NSFetchRequest` and `NSFetchedResultsController`.
+homepage: https://github.com/peymano/DVCoreDataFinders
+license: Apache 2.0
+authors:
+  Peyman Oreizy: peymano@dynamicvariable.com
+source:
+  git: https://github.com/peymano/DVCoreDataFinders.git
+  tag: '0.1'
+platforms:
+  ios: '5.0'
+source_files: DVCoreDataFinders
+requires_arc: true

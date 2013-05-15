@@ -1,0 +1,22 @@
+---
+name: NSContainers-PrettyPrint
+version: 0.2.0
+license: FDOSL
+summary: Print your own object descriptions just like Apple's own NSArray and NSDictionary.
+homepage: https://github.com/NSError/NSContainers-PrettyPrint
+authors:
+  Chris Miller: lordsauronthegreat@gmail.com
+source:
+  git: https://github.com/NSError/NSContainers-PrettyPrint.git
+  tag: 0.2.0
+description: "\n    What part of \"{\\n    foo : bar,\\n    someArray:     (\\n        foo,\\n
+  \       bar\\n    )\\n}\"\n    don't you understand?\n\n    Apple has documented
+  that NSArray, NSDictionary, NSSet, and friends should\n    honor the descriptionWithLocale:indent:
+  method should it be present in an\n    object, printing that object without newline-escaping
+  it or anything.\n    Well, ever since Snow Leopard, it doesn't for \"security reasons.\"
+  This is\n    a quick swizzle (or category-based replacement, depending on your\n
+  \   preference) which adds it back. Because your objects are beautiful (so are\n
+  \   you) and they deserve the limelight, too!\n  "
+source_files: PrettyPrint/*.{h,m}
+frameworks: Foundation
+requires_arc: true

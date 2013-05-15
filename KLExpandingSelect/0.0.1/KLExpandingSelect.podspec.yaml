@@ -1,0 +1,15 @@
+---
+name: KLExpandingSelect
+version: 0.0.1
+summary: A UI Control based on Summly's expanding sharing control.
+description: Have a menu appear exposing beautiful and easy to access buttons to the
+  user without removing them from where they want to be.
+homepage: http://www.cocoacontrols.com/platforms/ios/controls/klhorizontalselect
+license: Apache 2.0 License
+authors:
+  Kieran Lafferty: kieran.lafferty@gmail.com
+source:
+  git: https://github.com/mysterioustrousers/MTJSONUtils.git
+  commit: 8643ccb7b17c6730f042bbd5f52095bfe6e47dde
+source_files: MTJSONUtils/*.{h,m}
+requires_arc: true

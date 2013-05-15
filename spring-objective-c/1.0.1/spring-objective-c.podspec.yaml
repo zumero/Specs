@@ -1,0 +1,18 @@
+---
+name: spring-objective-c
+version: 1.0.1
+license: Apache2.0
+summary: Has been renamed to Typhoon.
+homepage: https://github.com/jasperblues/Typhoon.git
+authors:
+  Jasper Blues: jasper@appsquick.ly
+source:
+  git: https://github.com/jasperblues/Typhoon.git
+  tag: 1.0.1
+source_files: Source/**/*.{h,m}
+libraries:
+- z
+- xml2
+xcconfig:
+  HEADER_SEARCH_PATHS: $(SDKROOT)/usr/include/libxml2
+requires_arc: true

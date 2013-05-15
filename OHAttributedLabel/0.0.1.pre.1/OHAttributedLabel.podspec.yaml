@@ -1,0 +1,18 @@
+---
+name: OHAttributedLabel
+version: 0.0.1.pre.1
+license: MIT
+summary: UILabel that supports NSAttributedString.
+homepage: https://github.com/AliSoftware/OHAttributedLabel
+authors:
+  AliSoftware: olivier.halligon+ae@gmail.com
+source:
+  git: https://github.com/AliSoftware/OHAttributedLabel.git
+  commit: a417c6a10de748eaf899ad49f23393afa8e71137
+description: This class allows you to use a UILabel with NSAttributedStrings, in order
+  to display styled text with mixed style (mixed fonts, color, size, ...) in a unique
+  label.
+platforms:
+  ios: 
+source_files: '*.{h,m}'
+frameworks: CoreText

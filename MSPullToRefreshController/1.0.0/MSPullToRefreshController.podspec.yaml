@@ -1,0 +1,15 @@
+---
+name: MSPullToRefreshController
+platforms:
+  ios: 
+version: 1.0.0
+summary: The most flexible pull to refresh component EVER.
+license: MIT
+homepage: https://github.com/bONchON/MSPullToRefreshController
+authors:
+  John Z Wu: bogardon@gmail.com
+source:
+  git: https://github.com/bONchON/MSPullToRefreshController.git
+  tag: v1.0.0
+source_files: PullToRefreshDemo/MSPullToRefreshController.{h,m}
+requires_arc: false

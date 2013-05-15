@@ -1,0 +1,22 @@
+---
+name: WeChatSDK
+version: 0.0.1
+summary: The Official iOS SDK of WeChat from Tencent.
+homepage: http://dev.wechatapp.com/
+license:
+  type: Copyright
+  text: |2
+          Copyright (c) 2012 Tencent. All rights reserved.
+authors:
+  Tencent: developer@wechatapp.com
+source:
+  http: http://dev.wechatapp.com/download/sdk/WeChat_SDK_iOS_en.zip
+platforms:
+  ios: 
+source_files:
+- WeChat_SDK_iOSen/WXApiObject.h
+- WeChat_SDK_iOSen/WXApi.h
+preserve_paths: WeChat_SDK_iOSen/libWeChatSDK.a
+libraries: WeChatSDK
+xcconfig:
+  LIBRARY_SEARCH_PATHS: '"$(PODS_ROOT)/WeChatSDK/WeChat_SDK_iOSen"'

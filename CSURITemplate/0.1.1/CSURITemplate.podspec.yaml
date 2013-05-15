@@ -1,0 +1,35 @@
+---
+name: CSURITemplate
+version: 0.1.1
+summary: Implementation of the URI Template spec.
+homepage: https://github.com/cogenta/CSURITemplate
+license:
+  type: MIT
+  file: LICENSE
+authors:
+  Will Harris: will@greatlibrary.net
+source:
+  git: https://github.com/cogenta/CSURITemplate.git
+  tag: 0.1.1
+platforms:
+  ios: '5.0'
+  osx: '10.7'
+source_files:
+- CSURITemplate
+- CSURITemplate/**/*.{h,m}
+public_header_files: CSURITemplate/CSURITemplate.h
+requires_arc: true
+documentation:
+  appledoc:
+  - --project-name
+  - CSURITemplate
+  - --project-company
+  - Cogenta Systems Ltd
+  - --docset-copyright
+  - Cogenta Systems Ltd
+  - --ignore
+  - Common
+  - --index-desc
+  - README.md
+  - --no-keep-undocumented-objects
+  - --no-keep-undocumented-members

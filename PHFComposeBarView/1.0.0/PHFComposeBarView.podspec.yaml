@@ -1,0 +1,35 @@
+---
+name: PHFComposeBarView
+version: 1.0.0
+summary: A precise reconstruction of the compose bar from iOS Messages.app.
+description: |
+  The compose bar from the messages application on iOS is often replicated in
+  applications, mostly with slightly different visuals and behavior. This class is
+  an exact reconstruction of the compose bar and behaves exactly like it. It is
+  configurable in terms of maximium height the input view can grow. By specifying
+  a maximum text length a counter is shown, similar to composing an SMS. You can
+  also specify an image for the utility button on the left of the input which
+  causes that button to become visible.
+homepage: https://github.com/fphilipe/PHFComposeBarView
+license:
+  type: MIT
+  file: LICENSE
+authors:
+  Philipe Fatio: me@phili.pe
+source:
+  git: https://github.com/fphilipe/PHFComposeBarView.git
+  tag: v1.0.0
+source_files: Classes/*
+resources: Resources/*
+preserve_paths:
+- LICENSE
+- README.md
+requires_arc: true
+platforms:
+  ios: '5.0'
+screenshots:
+- https://rawgithub.com/fphilipe/PHFComposeBarView/master/Screenshots/empty.png
+- https://rawgithub.com/fphilipe/PHFComposeBarView/master/Screenshots/text.png
+dependencies:
+  PHFDelegateChain:
+  - ~> 1.0

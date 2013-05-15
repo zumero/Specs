@@ -1,0 +1,28 @@
+---
+name: SHOmniAuthFlickr
+version: 0.1.0
+summary: Flickr Strategy for SHOmniAuth, uses SHAccountStore and SHRequest.
+description: |2
+                      A strategy for authenticating with Flickr via SHOmniAuth.
+                      Uses SHAccountStore for store and SHRequest for signed requests.
+homepage: https://github.com/seivan/SHOmniAuthFlickr
+license:
+  type: MIT
+authors:
+  Seivan Heidari: seivan.heidari@icloud.com
+source:
+  git: https://github.com/seivan/SHOmniAuthFlickr.git
+  tag: 0.1.0
+platforms:
+  ios: '5.0'
+source_files: SHOmniAuthFlickr/**/*.{h,m}
+requires_arc: true
+dependencies:
+  AFOAuth1Client:
+  - ~> 0.2.0
+  SHOmniAuth:
+  - ~> 0.1.0
+  SHAccountStore:
+  - ~> 0.1.0
+  SHRequest:
+  - ~> 0.1.0

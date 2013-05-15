@@ -1,0 +1,51 @@
+---
+name: IPOfflineQueue
+version: 0.0.1
+summary: A persistent, serial task queue for iOS.
+description: |2
+                      IPOfflineQueue is a persistent, serial task queue for iOS. It's especially ideal for queuing actions that require an internet connection that may be slow or absent.
+
+                      * You enqueue tasks to it, and they run whenever they can in a background thread.
+                      * Tasks are always executed in the order in which they were added (FIFO).
+                      * Tasks are __not__ executed in parallel, although you are free to run parallel operations in your task-execution handler.
+                      * Queued tasks persist between application launches.
+                      * The application will remain running in the background until the queue completes or until iOS kills it (after no more than 10 minutes).
+                      * You're welcome to operate multiple queue instances if you'd like to run different tasks.
+                      * GCD is used extensively to prevent blocking the main thread.
+homepage: https://github.com/marcoarment/IPOfflineQueue
+license:
+  type: New BSD
+  text: "    Copyright (c) 2011, Marco Arment\n\n    All rights reserved.\n\n    Redistribution
+    and use in source and binary forms, with or without\n    modification, are permitted
+    provided that the following conditions are met:\n\n    * Redistributions of source
+    code must retain the above copyright\n          notice, this list of conditions
+    and the following disclaimer.\n    * Redistributions in binary form must reproduce
+    the above copyright\n          notice, this list of conditions and the following
+    disclaimer in the\n          documentation and/or other materials provided with
+    the distribution.\n    * Neither the name of Marco Arment nor the names of any
+    contributors may \n          be used to endorse or promote products derived from
+    this software without \n          specific prior written permission.\n\n    THIS
+    SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\n
+    \   ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n
+    \   WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n    DISCLAIMED.
+    IN NO EVENT SHALL MARCO ARMENT BE LIABLE FOR ANY\n    DIRECT, INDIRECT, INCIDENTAL,
+    SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n    (INCLUDING, BUT NOT LIMITED
+    TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n    LOSS OF USE, DATA, OR PROFITS;
+    OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\n    ON ANY THEORY OF LIABILITY,
+    WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n    (INCLUDING NEGLIGENCE OR OTHERWISE)
+    ARISING IN ANY WAY OUT OF THE USE OF THIS\n    SOFTWARE, EVEN IF ADVISED OF THE
+    POSSIBILITY OF SUCH DAMAGE.\n\n    (You may know this as the New BSD License.)\n"
+authors: Marco Arment
+source:
+  git: https://github.com/marcoarment/IPOfflineQueue.git
+  commit: a4c77b6aac0c279a24e115a00481a29618a84fa3
+platforms:
+  ios: '4.0'
+source_files:
+- IPOfflineQueue.h
+- IPOfflineQueue.m
+preserve_paths:
+- IPOfflineQueue.h
+- IPOfflineQueue.m
+libraries: libsqlite3
+requires_arc: false

@@ -1,0 +1,31 @@
+---
+name: AmazeKit
+version: 0.14.0
+summary: AmazeKit is a library for rendering beautiful images in your iOS app.
+homepage: https://github.com/detroit-labs/AmazeKit
+license: Apache
+authors:
+  Jeff Kelley: SlaunchaMan@gmail.com
+source:
+  git: https://github.com/detroit-labs/AmazeKit.git
+  tag: 0.14.0
+source_files: AmazeKit/AmazeKit/*.{h,m}
+frameworks:
+- Foundation
+- CoreGraphics
+- ImageIO
+- QuartzCore
+- UIKit
+platforms:
+  ios: 
+requires_arc: true
+documentation:
+  appledoc:
+  - --project-company
+  - Detroit Labs
+  - --company-id
+  - com.detroitlabs
+  - --no-repeat-first-par
+  - --no-keep-undocumented-objects
+  - --no-keep-undocumented-members
+  - --no-search-undocumented-doc

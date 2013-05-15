@@ -1,0 +1,18 @@
+---
+name: Mixpanel
+version: 2.0.0
+license: Apache License
+summary: iPhone tracking library for Mixpanel Analytics.
+homepage: http://mixpanel.com
+authors:
+  Mixpanel: support@mixpanel.com
+source:
+  git: https://github.com/mixpanel/mixpanel-iphone.git
+  tag: v2.0.0
+frameworks:
+- CoreTelephony
+- SystemConfiguration
+- AdSupport
+platforms:
+  ios: 
+source_files: Mixpanel/**/*.{h,m}

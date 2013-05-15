@@ -1,0 +1,28 @@
+---
+name: JPush
+version: 1.2.6
+license:
+  type: Copyright
+  text: LICENSE Copyright 201 - 2012 JPush.cn, Inc. All rights reserved.
+summary: JPush SDK for iOS.
+homepage: http://www.jpush.cn/
+authors:
+  jpush: support@jpush.cn
+source:
+  http: http://www.jpush.cn/app/download?type=ios&file=JPush-iOS-sdk-1.2.6.zip
+description: UMeng analytics SDK.
+platforms:
+  ios: 
+source_files: JPush-iOS-sdk-1.2.6/lib/*.h
+resources: JPush-iOS-sdk-1.2.6/lib/libPushSDK.a
+libraries: PushSDK
+frameworks:
+- UIKit
+- CFNetwork
+- CoreFoundation
+- CoreTelephony
+- CoreGraphics
+- SystemConfiguration
+- Foundation
+xcconfig:
+  LIBRARY_SEARCH_PATHS: $(PODS_ROOT)/JPush/JPush-iOS-sdk-1.2.6/lib

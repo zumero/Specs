@@ -1,0 +1,20 @@
+---
+name: Airbrake-iOS
+version: 3.1.0
+summary: A Airbrake Notifier for iOS.
+homepage: http://airbrake.io/pages/ios-notifier
+authors:
+  Airbrake: support@airbrake.io
+license:
+  type: MIT
+platforms:
+  ios: 
+source:
+  git: https://github.com/airbrake/airbrake-ios.git
+  tag: 3.1.0
+source_files: Airbrake/{notifier,gcalertview}/*.{h,m}
+resources: Airbrake/notifier/*.lproj
+frameworks: SystemConfiguration
+libraries: xml2
+dependencies:
+  KissXML: []

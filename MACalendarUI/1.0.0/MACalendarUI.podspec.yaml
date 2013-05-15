@@ -1,0 +1,17 @@
+---
+name: MACalendarUI
+platforms:
+  ios: 
+version: 1.0.0
+license: BSD
+summary: MACalendarUI is a project which offers calendar user interface for iPhone
+  applications.
+authors:
+  Matias Muhonen: mmu@iki.fi
+source:
+  git: https://github.com/muhku/calendar-ui.git
+  commit: df86fc4d5dd28da6dd5b647137179ae2d7911093
+source_files: Classes/Views
+resources: Images/*.png
+requires_arc: true
+homepage: https://github.com/muhku/calendar-ui

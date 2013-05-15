@@ -1,0 +1,46 @@
+---
+name: ReactiveCocoaLayout
+version: 0.3.1
+summary: Reactive layout framework built on top of ReactiveCocoa.
+homepage: https://github.com/ReactiveCocoa/ReactiveCocoaLayout
+authors:
+  ReactiveCocoa: ReactiveCocoa
+source:
+  git: https://github.com/ReactiveCocoa/ReactiveCocoaLayout.git
+  tag: 0.3.1
+license: Simplified BSD License
+description: ReactiveCocoaLayout is a framework for describing Cocoa and Cocoa Touch
+  layouts in a reactive way, based on ReactiveCocoa.
+requires_arc: true
+platforms:
+  ios: '6.0'
+  osx: '10.7'
+source_files: ReactiveCocoaLayout/*.{h,m}
+dependencies:
+  Archimedes: []
+  ReactiveCocoa: []
+ios:
+  frameworks:
+  - Foundation
+  - QuartzCore
+  - CoreGraphics
+  - UIKit
+  exclude_files:
+  - ReactiveCocoaLayout/NSCell*.{h,m}
+  - ReactiveCocoaLayout/NSControl*.{h,m}
+  - ReactiveCocoaLayout/NSView*.{h,m}
+osx:
+  exclude_files: ReactiveCocoaLayout/UIView*.{h,m}
+  frameworks:
+  - Foundation
+  - QuartzCore
+  - CoreGraphics
+  - Cocoa
+prefix_header_contents: |
+  #ifdef __OBJC__
+  #import <ReactiveCocoa/ReactiveCocoa.h>
+  #import <ReactiveCocoaLayout/ReactiveCocoaLayout.h>
+  #import <Archimedes/Archimedes.h>
+  #import <CoreGraphics/CoreGraphics.h>
+  #import <QuartzCore/QuartzCore.h>
+  #endif

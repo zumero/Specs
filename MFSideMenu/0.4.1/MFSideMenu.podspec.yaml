@@ -1,0 +1,15 @@
+---
+name: MFSideMenu
+version: 0.4.1
+license: BSD
+summary: Facebook-like side menu for iOS.
+homepage: https://github.com/mikefrederick/MFSideMenu
+authors:
+  Michael Frederick: mike@viamike.com
+source:
+  git: https://github.com/mikefrederick/MFSideMenu.git
+  tag: 0.4.1
+platforms:
+  ios: 
+source_files: MFSideMenu/*.{h,m}
+frameworks: QuartzCore

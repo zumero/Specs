@@ -1,0 +1,17 @@
+---
+name: Raven
+version: 0.1.0
+summary: A client for Sentry (getsentry.com).
+homepage: https://getsentry.com/
+license:
+  type: MIT
+  file: LICENSE
+authors:
+  David Cramer: dcramer@gmail.com
+source:
+  git: https://github.com/getsentry/raven-objc.git
+  tag: 0.1.0
+platforms:
+  ios: 
+source_files:
+- Raven

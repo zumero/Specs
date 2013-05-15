@@ -1,0 +1,26 @@
+---
+name: MTStackableNavigationController
+version: 0.2.0
+summary: A drop-in replacement for UINavigationController with stacked views ala Path
+  / Facebook.
+description: |2
+                      MTStackableNavigationController aims to be an API-compatible replacement for
+                      UINavigationController, with special sauce for Facebook / Path style stacked
+                      navigation. In contrast to most of the other view controller projects based on
+                      this paradigm, MTStackableNavigationController is targeted exclusively for use
+                      as a direct replacement for UINavigationController; layered navigation and deck
+                      style interaction are already done well by other controllers.
+homepage: https://github.com/mtrudel/MTStackableNavigationController
+license: MIT
+authors:
+  Mat Trudel: mat@geeky.net
+source:
+  git: https://github.com/mtrudel/MTStackableNavigationController.git
+  tag: 0.2.0
+platforms:
+  ios: '5.0'
+source_files:
+- Classes
+- Classes/**/*.{h,m}
+frameworks: QuartzCore
+requires_arc: true

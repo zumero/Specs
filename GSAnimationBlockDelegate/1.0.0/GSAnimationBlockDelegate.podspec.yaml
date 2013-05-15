@@ -1,0 +1,22 @@
+---
+name: GSAnimationBlockDelegate
+version: 1.0.0
+summary: A lightweight class that supports block callbacks instead of CAAnimation
+  delegates.
+description: |2
+    GSAnimationBlockDelegate offers 3 different blocks :
+    blockOnAnimationStarted when the animation starts
+    blockOnAnimationSucceeded when the animation succeeds
+    and blockOnAnimationFailed when the animation fails.
+homepage: https://github.com/MartinMoizard/GSAnimationBlockDelegate
+license:
+  type: MIT
+  file: LICENSE.txt
+authors: Martin Moizard
+source:
+  git: https://github.com/MartinMoizard/GSAnimationBlockDelegate.git
+  tag: 1.0.0
+platforms:
+  ios: '5.0'
+source_files: GSAnimationBlockDelegate/Library
+requires_arc: true

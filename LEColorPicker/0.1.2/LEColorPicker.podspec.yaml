@@ -1,0 +1,16 @@
+---
+name: LEColorPicker
+version: 0.1.2
+summary: A Cocoa-Touch system for iOS to get a color scheme in function of an image,
+  like iTunes 11 does.
+homepage: https://github.com/luisespinoza/LEColorPicker
+license: MIT
+authors:
+  Luis Enrique Espinoza Severino: luis.espinoza.severino@gmail.com
+source:
+  git: https://github.com/luisespinoza/LEColorPicker.git
+  tag: 0.1.2
+platforms:
+  ios: 
+source_files: LEColorPicker
+requires_arc: true

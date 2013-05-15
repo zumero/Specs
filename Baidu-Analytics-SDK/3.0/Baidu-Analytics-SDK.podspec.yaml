@@ -1,0 +1,27 @@
+---
+name: Baidu-Analytics-SDK
+version: '3.0'
+license:
+  type: Copyright
+  text: LICENSE  ©2013 Baidu, Inc. All rights reserved.
+summary: Baidu mobile tongji analytics SDK for iOS.
+homepage: http://mtj.baidu.com/
+authors:
+  baidu: apptongji@baidu.com
+source:
+  http: http://mtj.baidu.com/sdk/ios_3.0.zip
+platforms:
+  ios: 
+source_files: ios_api/Release-iphoneos/*.h
+resources: ios_api/Release-iphoneos/*.a
+frameworks:
+- CoreLocation
+- libstdc++.dylib
+- CoreTelephony
+- SystemConfiguration
+- libz.dylib
+libraries: BaiduMobStat
+xcconfig:
+  LIBRARY_SEARCH_PATHS: $(PODS_ROOT)/ios_api/Release-iphoneos
+dependencies:
+  TouchJSON: []

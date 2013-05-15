@@ -1,0 +1,17 @@
+---
+name: BlocksKit
+version: 1.0.3
+license: MIT
+summary: The Objective-C block utilities you always wish you had.
+homepage: https://github.com/zwaldowski/BlocksKit
+authors:
+  Zachary Waldowski: zwaldowski@gmail.com
+  Alexsander Akers: a2@pandamonia.us
+source:
+  git: https://github.com/zwaldowski/BlocksKit.git
+  tag: v1.0.3
+source_files: BlocksKit
+dependencies:
+  A2DynamicDelegate: []
+ios:
+  frameworks: MessageUI

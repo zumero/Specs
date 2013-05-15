@@ -1,0 +1,20 @@
+---
+name: AFKissXMLRequestOperation
+version: 0.0.1
+homepage: https://github.com/AFNetworking/AFKissXMLRequestOperation
+authors:
+  Mattt Thompson: m@mattt.me
+license: MIT
+summary: An extension for AFNetworking that provides an interface to parse XML using
+  KissXML.
+source:
+  git: https://github.com/AFNetworking/AFKissXMLRequestOperation.git
+  tag: 0.0.1
+source_files: AFKissXMLRequestOperation.{h,m}
+dependencies:
+  AFNetworking: []
+  KissXML: []
+platforms:
+  ios: '5.0'
+  osx: '10.7'
+requires_arc: true

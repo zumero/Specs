@@ -1,0 +1,29 @@
+---
+name: SHOmniAuthTwitter
+version: 0.2.3
+summary: Twitter strategy for SHOmniAuth.
+description: |2
+                      A strategy for authenticating with Twitter via SHOmniAuth.
+                      Uses reverse authentication and ACAccountStore.
+homepage: https://github.com/seivan/SHOmniAuthTwitter
+license:
+  type: MIT
+authors:
+  Seivan Heidari: seivan.heidari@icloud.com
+source:
+  git: https://github.com/seivan/SHOmniAuthTwitter.git
+  tag: 0.2.3
+platforms:
+  ios: '6.0'
+frameworks:
+- Social
+- Accounts
+source_files: SHOmniAuthTwitter/**/*.{h,m}
+requires_arc: true
+dependencies:
+  TWReverseAuth:
+  - ~>0.1.0
+  AFOAuth1Client:
+  - ~> 0.2.0
+  SHOmniAuth:
+  - ~> 0.1.0

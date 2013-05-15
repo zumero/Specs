@@ -1,0 +1,19 @@
+---
+name: AFUrbanAirshipClient
+version: 0.0.1
+license: MIT
+summary: An API Client for Registering and Unregistering Devices with Urban Airship.
+homepage: https://github.com/AFNetworking/AFUrbanAirshipClient
+authors:
+  Mattt Thompson: m@mattt.me
+source:
+  git: https://github.com/AFNetworking/AFUrbanAirshipClient.git
+  tag: 0.0.1
+source_files: '*.{h,m}'
+requires_arc: true
+platforms:
+  ios: '5.0'
+  osx: '10.7'
+dependencies:
+  AFNetworking:
+  - ~> 1.0

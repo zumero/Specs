@@ -1,0 +1,24 @@
+---
+name: ACEView
+version: 0.0.4
+summary: Use the ACE editor in your Cocoa applications.
+description: |2
+                      The ACEView framework aims to allow you to use the ACE source code editor in your Cocoa applications, as if it were a native control.
+homepage: https://github.com/faceleg/ACEView
+license:
+  type: BSD
+  file: LICENSE
+authors:
+  Michael Robinson: mike@pagesofinterest.net
+source:
+  git: https://github.com/faceleg/ACEView.git
+  tag: 0.0.4
+  submodules: true
+platforms:
+  osx: 
+frameworks:
+- WebKit
+resources:
+- ACEView/Dependencies/ace/src/*.js
+- ACEView/HTML/index.html
+source_files: ACEView/**/*.{h,m}

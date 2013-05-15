@@ -1,0 +1,18 @@
+---
+name: SEHumanizedTimeDiff
+version: 0.0.1
+license: MIT
+summary: An NSDate category to have humanly meaningful time intervals since todays
+  date.
+description: |2
+                      An NSDate category to have humanly meaningful time intervals since todays date.
+                      Localizations available for Chinese, Japanese, Turkish, English, and German.
+homepage: https://github.com/fictorial/SEHumanizedTimeDiff
+authors:
+  Sarp Erdag: sarp.erdag@apperto.com
+source:
+  git: https://github.com/fictorial/SEHumanizedTimeDiff.git
+  tag: 0.0.1
+source_files: SEHumanizedTime/*.{h,m}
+resources: SEHumanizedTime/{en,de,ja,tr,zh-Hans}.lproj
+frameworks: Foundation

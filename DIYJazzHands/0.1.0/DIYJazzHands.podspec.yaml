@@ -1,0 +1,15 @@
+---
+name: DIYJazzHands
+version: 0.1.0
+license: Apache 2.0
+summary: Scratch-off images like woah.
+homepage: https://github.com/diy/jazzhands
+authors:
+  Jon Beilin: jon@diy.org
+source:
+  git: https://github.com/diy/jazzhands.git
+  tag: v0.1.0
+platforms:
+  ios: 
+source_files: DIYJazzHands
+requires_arc: true
