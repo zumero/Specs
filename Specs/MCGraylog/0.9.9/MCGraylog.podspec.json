@@ -1,0 +1,26 @@
+{
+  "name": "MCGraylog",
+  "version": "0.9.9",
+  "summary": "MCGraylog is a Cocoa C library for logging to a Graylog2 server or any other service that can grok GELF.",
+  "homepage": "http://github.com/Marketcircle/MCGraylog",
+  "license": {
+    "type": "BSD",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Mark Rada": "mrada@marketcircle.com",
+    "Thomas Bartelmess": "tbartelmess@marketcircle.com",
+    "Jordan Valadas": "jvaladas@marketcircle.com"
+  },
+  "source": {
+    "git": "https://github.com/Marketcircle/MCGraylog.git",
+    "tag": "0.9.9"
+  },
+  "platforms": {
+    "osx": "10.8"
+  },
+  "source_files": "MCGraylog/MCGraylog/MCGraylog.h",
+  "public_header_files": "MCGraylog/MCGraylog/MCGraylog.h",
+  "libraries": "libz",
+  "requires_arc": true
+}

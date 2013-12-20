@@ -1,0 +1,35 @@
+{
+  "name": "JPush",
+  "version": "1.4.0",
+  "license": {
+    "type": "Copyright",
+    "text": "LICENSE Copyright 201 - 2012 JPush.cn, Inc. All rights reserved."
+  },
+  "summary": "JPush SDK for iOS.",
+  "homepage": "http://www.jpush.cn/",
+  "authors": {
+    "jpush": "support@jpush.cn"
+  },
+  "source": {
+    "http": "http://www.luochunhui.com/downloads/jpush.1.4.0.zip"
+  },
+  "description": "UMeng analytics SDK.",
+  "platforms": {
+    "ios": null
+  },
+  "source_files": "JPush-iOS-SDK-OpenUDID-1.4.0/lib/*.h",
+  "preserve_paths": "JPush-iOS-SDK-OpenUDID-1.4.0/lib/libPushSDK*.a",
+  "libraries": "PushSDK",
+  "frameworks": [
+    "UIKit",
+    "CFNetwork",
+    "CoreFoundation",
+    "CoreTelephony",
+    "CoreGraphics",
+    "SystemConfiguration",
+    "Foundation"
+  ],
+  "xcconfig": {
+    "LIBRARY_SEARCH_PATHS": "$(PODS_ROOT)/JPush/JPush-iOS-SDK-OpenUDID-1.4.0/lib"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "liftoff-ios-sdk",
+  "version": "1.0.1",
+  "summary": "Liftoff iOS SDK.",
+  "description": "Performance advertising SDK.",
+  "homepage": "http://liftoff.io",
+  "license": {
+    "type": "Copyright",
+    "text": "Copyright 2013 Liftoff. All rights reserved.\n"
+  },
+  "authors": "Liftoff",
+  "source": {
+    "http": "http://docs.liftoff.io/downloads/liftoff-ios-sdk-v1.0.1.zip",
+    "flatten": true
+  },
+  "platforms": {
+    "ios": null
+  },
+  "source_files": "Liftoff/*.h",
+  "preserve_paths": "Liftoff/libLiftoff.a",
+  "libraries": "Liftoff",
+  "xcconfig": {
+    "OTHER_LDFLAGS": "-ObjC",
+    "LIBRARY_SEARCH_PATHS": "\"$(PODS_ROOT)/liftoff-ios-sdk/Liftoff\""
+  }
+}

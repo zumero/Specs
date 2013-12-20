@@ -1,0 +1,26 @@
+{
+  "name": "LASenTesting",
+  "prefix_header_file": "Project/LASenTesting/LASenTesting-Prefix.pch",
+  "version": "0.0.1",
+  "summary": "An extension of the SenTesting framework - currently the only feature is ASync testing (good for blocks).",
+  "homepage": "https://bitbucket.org/larromba/lasentesting",
+  "license": {
+    "type": "BSD",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Lee Arromba": "larromba@gmail.com"
+  },
+  "source": {
+    "git": "https://larromba@bitbucket.org/larromba/lasentesting.git",
+    "tag": "v0.0.1"
+  },
+  "source_files": "Classes/ios/**/*.{h,m}",
+  "requires_arc": true,
+  "platforms": {
+    "ios": "5.0"
+  },
+  "ios": {
+    "frameworks": "SenTestingKit"
+  }
+}

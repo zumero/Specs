@@ -1,0 +1,23 @@
+{
+  "name": "ProximityKit",
+  "version": "0.2.3",
+  "summary": "Proximity Kit SDK for iOS",
+  "description": "                     Proximity Kit simplifies iBeacons and Geofences\n\n                     * Manage iBeacons and Geofences with a simple web interface\n                     * Automatically Sync Beacons and Geofences to your app\n                     * Add simple key-value pairs\n\n                     For more details visit [Proximity Kit](http://proximitykit.com/).\n",
+  "homepage": "http://proximitykit.com/",
+  "license": {
+    "type": "Commercial",
+    "text": "See http://radiusnetworks.com/terms_of_service.html"
+  },
+  "authors": {
+    "Radius Networks": "support@radiusnetworks.com"
+  },
+  "platforms": {
+    "ios": null
+  },
+  "source": {
+    "http": "http://s3.proximitykit.com/ProximityKit-v0.2.3.zip"
+  },
+  "source_files": "ProximityKit.framework/Versions/A/Headers/*.h",
+  "preserve_paths": "ProximityKit.framework",
+  "frameworks": "CoreLocation"
+}

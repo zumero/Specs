@@ -1,0 +1,32 @@
+{
+  "name": "XControls",
+  "version": "1.0.0",
+  "summary": "Controls for rapid iOS UI development.",
+  "description": "                    Controls for rapid iOS UI development.\n",
+  "homepage": "https://github.com/timonroe/XControls",
+  "license": "MIT",
+  "authors": {
+    "Tim Monroe": "timonroe12@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/timonroe/XControls.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "frameworks": [
+    "CoreGraphics",
+    "UIKit",
+    "Foundation"
+  ],
+  "source_files": [
+    "XControls/*",
+    "XCVCells/*",
+    "XTVCells/*"
+  ],
+  "resources": [
+    "XControls/*.png"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "FastDTW-x",
+  "version": "0.3.1",
+  "summary": "C++ porting of Stan Salvador's FastDTW.",
+  "homepage": "https://github.com/melode11/FastDTW-x",
+  "license": {
+    "type": "MIT"
+  },
+  "authors": {
+    "Melo Yao": "melode11@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/melode11/FastDTW-x.git",
+    "tag": "0.3.1"
+  },
+  "source_files": "FastDTW-x/Classes/*.h",
+  "requires_arc": false,
+  "xcconfig": {
+    "CLANG_CXX_LANGUAGE_STANDARD": "gnu++11",
+    "CLANG_CXX_LIBRARY": "libstdc++"
+  },
+  "subspecs": [
+    {
+      "name": "Util",
+      "source_files": "FastDTW-x/Classes/Util/*.{h,cpp}"
+    },
+    {
+      "name": "TimeSeries",
+      "source_files": "FastDTW-x/Classes/TimeSeries/*.{h,cpp}"
+    },
+    {
+      "name": "Dtw",
+      "source_files": "FastDTW-x/Classes/Dtw/*.{h,cpp}"
+    }
+  ]
+}
